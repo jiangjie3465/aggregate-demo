@@ -1,7 +1,7 @@
 package com.jdark.aggregate.demo.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.jdark.aggregate.demo.pojo.po.SysUserRoleEntity;
+import com.jdark.aggregate.demo.pojo.po.SysUserRoleDO;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -10,6 +10,6 @@ import org.apache.ibatis.annotations.Mapper;
  * @CreateTime 2019/9/14 15:57
  */
 @Mapper
-public interface SysUserRoleDao extends BaseMapper<SysUserRoleEntity> {
+public interface SysUserRoleMapper extends BaseMapper<SysUserRoleDO> {
 	
 }

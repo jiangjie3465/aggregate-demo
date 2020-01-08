@@ -6,25 +6,29 @@ import java.io.Serializable;
 import lombok.Data;
 
 /**
- * @Description 用户与角色关系实体
+ * 系统用户实体
  * @Author Sans
  * @CreateTime 2019/9/14 15:57
  */
 @Data
-@TableName("sys_user_role")
-public class SysUserRoleEntity implements Serializable {
+@TableName("sys_user")
+public class SysUserDO implements Serializable {
 	private static final long serialVersionUID = 1L;
-	/**
-	 * ID
-	 */
-	@TableId
-	private Long id;
 	/**
 	 * 用户ID
 	 */
+	@TableId
 	private Long userId;
 	/**
-	 * 角色ID
+	 * 用户名
 	 */
-	private Long roleId;
+	private String username;
+	/**
+	 * 密码
+	 */
+	private String password;
+	/**
+	 * 状态:NORMAL正常  PROHIBIT禁用
+	 */
+	private String status;
 }

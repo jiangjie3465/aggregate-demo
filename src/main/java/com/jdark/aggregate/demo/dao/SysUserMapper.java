@@ -3,7 +3,7 @@ package com.jdark.aggregate.demo.dao;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.jdark.aggregate.demo.pojo.po.SysMenuDO;
 import com.jdark.aggregate.demo.pojo.po.SysRoleDO;
-import com.jdark.aggregate.demo.pojo.po.SysUserEntity;
+import com.jdark.aggregate.demo.pojo.po.SysUserDO;
 import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -13,7 +13,7 @@ import org.apache.ibatis.annotations.Mapper;
  * @CreateTime 2019/9/14 15:57
  */
 @Mapper
-public interface SysUserDao extends BaseMapper<SysUserEntity> {
+public interface SysUserMapper extends BaseMapper<SysUserDO> {
 
     /**
      * 通过用户ID查询角色集合
