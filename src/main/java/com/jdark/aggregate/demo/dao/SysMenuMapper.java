@@ -1,15 +1,12 @@
 package com.jdark.aggregate.demo.dao;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.jdark.aggregate.demo.pojo.po.SysMenuDO;
-import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
+import tk.mybatis.mapper.common.Mapper;
 
 /**
- * 权限DAO
- * @Author Sans
- * @CreateTime 2019/9/14 15:57
+ * @author 蒋杰
  */
-@Mapper
-public interface SysMenuMapper extends BaseMapper<SysMenuDO> {
-
+@Repository
+public interface SysMenuMapper extends Mapper<SysMenuDO> {
 }

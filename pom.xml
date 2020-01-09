@@ -18,6 +18,9 @@
   <properties>
     <java.version>1.8</java.version>
     <hutool.version>4.4.5</hutool.version>
+    <pagehelper.version>1.2.10</pagehelper.version>
+    <mapper-starter.version>2.1.5</mapper-starter.version>
+    <tk.mybatis.version>3.4.0</tk.mybatis.version>
   </properties>
 
   <dependencies>
@@ -85,7 +88,29 @@
     <dependency>
       <groupId>tk.mybatis</groupId>
       <artifactId>mapper</artifactId>
-      <version>3.4.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.logging.log4j</groupId>
+          <artifactId>log4j-to-slf4j</artifactId>
+        </exclusion>
+      </exclusions>
+      <version>${tk.mybatis.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>mapper-spring-boot-starter</artifactId>
+      <groupId>tk.mybatis</groupId>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.logging.log4j</groupId>
+          <artifactId>log4j-to-slf4j</artifactId>
+        </exclusion>
+      </exclusions>
+      <version>${mapper-starter.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>pagehelper-spring-boot-starter</artifactId>
+      <groupId>com.github.pagehelper</groupId>
+      <version>${pagehelper.version}</version>
     </dependency>
 
   </dependencies>
@@ -101,7 +126,7 @@
         <artifactId>mybatis-generator-maven-plugin</artifactId>
         <version>1.3.6</version>
         <configuration>
-          <configurationFile>${basedir}/src/main/resources/generator/generatorMysqlConfig.xml
+          <configurationFile>${basedir}/src/main/resources/generator/generatorConfig.xml
           </configurationFile>
           <overwrite>true</overwrite>
           <verbose>true</verbose>
@@ -112,7 +137,6 @@
             <groupId>mysql</groupId>
             <version>5.1.35</version>
           </dependency>
-
           <dependency>
             <groupId>tk.mybatis</groupId>
             <artifactId>mapper</artifactId>

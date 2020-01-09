@@ -17,7 +17,7 @@
 
     <!-- 数据库链接URL、用户名、密码 -->
     <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-      connectionURL="jdbc:mysql://localhost:3306/marketmanagedev?useUnicode=true&amp;characterEncoding=UTF-8&amp;allowMultiQueries=true&amp;useSSL=false"
+      connectionURL="jdbc:mysql://localhost:3306/aggregate_demo?useUnicode=true&amp;characterEncoding=UTF-8&amp;allowMultiQueries=true&amp;useSSL=false"
       userId="root"
       password="admin">
     </jdbcConnection>
@@ -30,7 +30,7 @@
     生成model模型，对应的包路径，以及文件存放路径(targetProject)，targetProject可以指定具体的路径,如./src/main/java，
     也可以使用“MAVEN”来自动生成，这样生成的代码会在target/generatord-source目录下
     -->
-    <javaModelGenerator targetPackage="com.market.order.provider.model.mysql" targetProject="./src/main/java">
+    <javaModelGenerator targetPackage="com.jdark.aggregate.demo.pojo.po" targetProject="./src/main/java">
       <property name="enableSubPackages" value="true"/>
       <!-- 从数据库返回的值被清理前后的空格  -->
       <property name="trimStrings" value="true" />
@@ -47,7 +47,7 @@
     </javaClientGenerator>
 
 
-    <table tableName="t_sync_order_task" domainObjectName="SyncOrderTaskDO"
+    <table tableName="sys_menu" domainObjectName="SysMenuDO"
       enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
       enableSelectByExample="false" selectByExampleQueryId="false" >
       <property name="useActualColumnNames" value="false"/>
