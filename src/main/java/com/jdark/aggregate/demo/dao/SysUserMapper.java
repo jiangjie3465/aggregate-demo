@@ -1,20 +1,17 @@
 package com.jdark.aggregate.demo.dao;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.jdark.aggregate.demo.pojo.po.SysMenuDO;
-import com.jdark.aggregate.demo.pojo.po.SysRoleDO;
 import com.jdark.aggregate.demo.pojo.po.SysUserDO;
+import org.springframework.stereotype.Repository;
+import tk.mybatis.mapper.common.Mapper;
+
 import java.util.List;
-import org.apache.ibatis.annotations.Mapper;
 
 /**
- * @Description 系统用户DAO
- * @Author Sans
- * @CreateTime 2019/9/14 15:57
+ * @author 蒋杰
  */
-@Mapper
-public interface SysUserMapper extends BaseMapper<SysUserDO> {
-
+@Repository
+public interface SysUserMapper extends Mapper<SysUserDO> {
     /**
      * 通过用户ID查询角色集合
      * @Author Sans
@@ -31,5 +28,4 @@ public interface SysUserMapper extends BaseMapper<SysUserDO> {
      * @Return List<SysMenuEntity> 角色名集合
      */
     List<SysMenuDO> selectSysMenuByUserId(Long userId);
-	
 }

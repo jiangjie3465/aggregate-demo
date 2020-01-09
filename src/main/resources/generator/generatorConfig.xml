@@ -47,7 +47,27 @@
     </javaClientGenerator>
 
 
-    <table tableName="sys_menu" domainObjectName="SysMenuDO"
+ <!--   <table tableName="sys_menu" domainObjectName="SysMenuDO"
+      enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+      enableSelectByExample="false" selectByExampleQueryId="false" >
+      <property name="useActualColumnNames" value="false"/>
+    </table>-->
+    <table tableName="sys_role" domainObjectName="SysRole"
+      enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+      enableSelectByExample="false" selectByExampleQueryId="false" >
+      <property name="useActualColumnNames" value="false"/>
+    </table>
+    <table tableName="sys_role_menu" domainObjectName="SysRoleMenu"
+      enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+      enableSelectByExample="false" selectByExampleQueryId="false" >
+      <property name="useActualColumnNames" value="false"/>
+    </table>
+    <table tableName="sys_user" domainObjectName="SysUserDO"
+      enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+      enableSelectByExample="false" selectByExampleQueryId="false" >
+      <property name="useActualColumnNames" value="false"/>
+    </table>
+    <table tableName="sys_user_role" domainObjectName="SysUserRoleDO"
       enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
       enableSelectByExample="false" selectByExampleQueryId="false" >
       <property name="useActualColumnNames" value="false"/>
