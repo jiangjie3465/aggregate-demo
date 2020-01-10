@@ -1,4 +1,4 @@
-package com.jdark.aggregate.demo.security;
+package com.jdark.aggregate.demo.security.handler;
 
 import com.sans.common.config.JwtConfig;
 import com.sans.common.util.JWTTokenUtil;
