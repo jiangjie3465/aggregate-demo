@@ -1,0 +1,10 @@
+com\jdark\aggregate\demo\dao\mapper\SysMenuMapper.class
+com\jdark\aggregate\demo\dao\po\SysRoleDO.class
+com\jdark\aggregate\demo\dao\po\SysRoleMenuDO.class
+com\jdark\aggregate\demo\dao\mapper\SysRoleMapper.class
+com\jdark\aggregate\demo\dao\po\SysUserDO.class
+com\jdark\aggregate\demo\dao\po\SysMenuDO.class
+com\jdark\aggregate\demo\dao\mapper\SysUserRoleMapper.class
+com\jdark\aggregate\demo\dao\po\SysUserRoleDO.class
+com\jdark\aggregate\demo\dao\mapper\SysUserMapper.class
+com\jdark\aggregate\demo\dao\mapper\SysRoleMenuMapper.class
