@@ -1,5 +1,9 @@
-com\jdark\aggregate\demo\service\SysRoleService.class
 com\jdark\aggregate\demo\service\SysUserRoleService.class
-com\jdark\aggregate\demo\service\SysUserService.class
 com\jdark\aggregate\demo\service\SysRoleMenuService.class
+com\jdark\aggregate\demo\service\impl\SysMenuServiceImpl.class
+com\jdark\aggregate\demo\service\SysRoleService.class
+com\jdark\aggregate\demo\service\impl\SysRoleMenuServiceImpl.class
+com\jdark\aggregate\demo\service\impl\SysRoleServiceImpl.class
+com\jdark\aggregate\demo\service\SysUserService.class
+com\jdark\aggregate\demo\service\impl\SysUserRoleServiceImpl.class
 com\jdark\aggregate\demo\service\SysMenuService.class
