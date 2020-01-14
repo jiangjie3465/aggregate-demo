@@ -7,6 +7,7 @@ import com.jdark.aggregate.demo.dao.po.SysRoleDO;
 import com.jdark.aggregate.demo.dao.po.SysUserDO;
 import com.jdark.aggregate.demo.service.SysUserService;
 import java.util.List;
+import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
@@ -67,5 +68,12 @@ public class SysUserServiceImpl implements SysUserService {
   @Override
   public List<SysMenuDO> selectSysMenuByUserId(Long userId) {
     return this.sysUserMapper.selectSysMenuByUserId(userId);
+  }
+  @PostConstruct
+  public void testMapper() {
+    List<SysUserDO> sysUserDOS = sysUserMapper.selectAll();
+    List<SysMenuDO> sysMenuDOS = sysUserMapper.selectSysMenuByUserId(1L);
+    sysUserDOS.forEach(System.out::println);
+    sysMenuDOS.forEach(System.out::println);
   }
 }

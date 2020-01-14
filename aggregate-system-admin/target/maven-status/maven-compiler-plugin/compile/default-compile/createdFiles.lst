@@ -6,4 +6,5 @@ com\jdark\aggregate\demo\service\impl\SysRoleMenuServiceImpl.class
 com\jdark\aggregate\demo\service\impl\SysRoleServiceImpl.class
 com\jdark\aggregate\demo\service\SysUserService.class
 com\jdark\aggregate\demo\service\impl\SysUserRoleServiceImpl.class
+com\jdark\aggregate\demo\service\impl\SysUserServiceImpl.class
 com\jdark\aggregate\demo\service\SysMenuService.class

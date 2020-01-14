@@ -1,18 +1,23 @@
 package com.jdark.aggregate.demo;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+import tk.mybatis.spring.annotation.MapperScan;
 
 /**
  * @author jiangjie
  */
 @MapperScan(basePackages = {"com.jdark.aggregate.demo.dao"})
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.jdark.aggregate"})
 public class AggregateAppApplication {
 
+
+
   public static void main(String[] args) {
-    SpringApplication.run(AggregateAppApplication.class, args);
+    ConfigurableApplicationContext run = SpringApplication.run(AggregateAppApplication.class, args);
   }
+
+
 
 }
